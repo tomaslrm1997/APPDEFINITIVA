@@ -4,3 +4,10 @@
     color: white;
     padding: 1rem 2rem;
 }
+
+.nuevoli {
+
+    border: 2px;
+    border-radius: 2px;
+    border-style:groove;
+}
