@@ -59,7 +59,16 @@ gastos.forEach(gasto => {
 
     const resultados = document.querySelector("#resultado");
     const {texto,numero }= gasto;
-    console.log(texto); 
+    
+    const nuevoli= document.createElement ("li");
+    nuevoli.classList.add("nuevoli");
+
+    nuevoli.innerHTML=`
+    ${texto}: <span class="cantindadEstilo"> $ ${numero} </span>
+    `;
+    
+resultados.appendChild(nuevoli);
+
     
 })
 }
