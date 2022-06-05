@@ -53,7 +53,7 @@ const objGastos= {
 gastos.push (objGastos);
 
 mostrarHTML();
-
+}
 function mostrarHTML() {
 gastos.forEach(gasto => {
 
@@ -70,6 +70,6 @@ gastos.forEach(gasto => {
 resultados.appendChild(nuevoli);
 
     
-})
-}
+});
+gastos = [];
 }
