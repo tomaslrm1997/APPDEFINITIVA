@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded",iniciarApp);
 
+let gastos= [];
+
 function iniciarApp () {
 document.querySelector("#formulario").addEventListener("submit",valorsubmit);
 }
@@ -14,6 +16,8 @@ mostrarAlerta("Los valores no son válidos.");
 return;
 
 }
+
+agregarGastos (texto,numero);
 
 
 }    
@@ -37,5 +41,26 @@ setTimeout(() => {
 divmensaje.remove();
 }, 2000);
 
+}
+}
+
+function agregarGastos(texto,numero) {
+const objGastos= {
+    texto,
+    numero
+}
+
+gastos.push (objGastos);
+
+mostrarHTML();
+
+function mostrarHTML() {
+gastos.forEach(gasto => {
+
+    const resultados = document.querySelector("#resultado");
+    const {texto,numero }= gasto;
+    console.log(texto); 
+    
+})
 }
 }
